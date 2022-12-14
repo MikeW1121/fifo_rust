@@ -15,14 +15,6 @@ fn print(fifo:fifo_event_t){
 }
 
 
-// fn print(fifo: fifo_event_t){
-//     if  fifo.event != None{
-//         println!("Event Type: {}", fifo.event);
-//     }else{
-//         println!("Pulled from empty fifo!");
-//     }
-// }
-
 fn test_basics(){
     let mut fifo = fifo_t::fifo_init(); 
     let mut out:fifo_event_t;
