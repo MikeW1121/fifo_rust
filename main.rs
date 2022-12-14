@@ -10,7 +10,7 @@ impl fifo_t{
 fn print(fifo:fifo_event_t){
     match fifo.event{
         None => println!("Pulled from empty fifo!"),
-        Some(value) =>println!("Event Type: {}\nData Address: 0x{:p}", value, fifo.data)
+        Some(value) =>println!("Event Type: {}\nData Address: {:p}", value, fifo.data)
     }
 }
 
